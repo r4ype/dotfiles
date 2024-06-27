@@ -1,0 +1,38 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "features": {
+    "inline_completion_provider": "none"
+  },
+  "theme": {
+    "mode": "dark",
+    "dark": "One Dark",
+    "light": "One Light"
+  },
+  "telemetry": {
+    "metrics": false
+  },
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 18,
+  "remove_trailing_whitespace_on_save": true,
+  "format_on_save": "off",
+  "formatter": "auto",
+  "autosave": "on_focus_change",
+  "project_panel": {
+    "folder_icons": false,
+    "file_icons": true,
+    "git_status": false
+  },
+  "terminal": {
+    "shell": {
+      "program": "pwsh.exe"
+    }
+  }
+}
