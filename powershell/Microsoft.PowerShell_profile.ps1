@@ -1,5 +1,4 @@
 Invoke-Expression (&starship init powershell)
-fnm env --use-on-cd | Out-String | Invoke-Expression
 function New-File {
     param (
         [string]$path
