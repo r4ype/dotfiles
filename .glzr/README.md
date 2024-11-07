@@ -10,20 +10,9 @@
 - [nushell](https://github.com/nushell/nushell)
 
 # some file explain
-- scripts/bind.ahk
+- scripts/*.ahk
   some mouse action bind and disable Lwin key open system menu
-- autohidecursor.ahk
-  auto hide cursor when you typing
-- hotarea.ahk
-  when you mouse enter top left corner, it will toggle taskview
-- shellexec.exe(Administrator permissions required)
-  a Execute files that allow you to execute commands without popping up the terminal.source code:[shellexec](https://gitee.com/DreamMaoMao/win-shellexec)
-
-# install
-```powershell
-git clone https://gitee.com/DreamMaoMao/glazewm-config.git $env:HOMEPATH\.glzr
-```
-
+- shellexec.exe(Administrator permissions required
 # modify zebar
 
 - 1.you need to install `bun`
