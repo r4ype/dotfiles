@@ -1,0 +1,21 @@
+{
+  "$schema": "https://github.com/glzr-io/zebar/raw/v2.1.0/resources/widget-schema.json",
+  "htmlPath": "./dist/index.html",
+  "zOrder": "normal",
+  "shownInTaskbar": false,
+  "focused": false,
+  "resizable": false,
+  "transparent": true,
+  "defaultPlacements": [
+    {
+      "anchor": "top_left",
+      "offsetX": "10px",
+      "offsetY": "5px",
+      "width": "1518px",
+      "height": "40px",
+      "monitorSelection": {
+        "type": "all"
+      }
+    }
+  ]
+}

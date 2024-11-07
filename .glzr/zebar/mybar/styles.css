@@ -1,0 +1,295 @@
+/**
+ * Import the Nerdfonts icon font.
+ * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
+ */
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
+i {
+  color: rgba(209, 183, 135, 0.95);
+  margin-right: 5px;
+}
+
+body {
+  color: rgb(240, 227, 188);
+  font-weight: bold;
+  font-family: Maple Mono SC NF, JetBrainsMono Nerd Font, monospace;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  border-radius: 18px;
+  /* border-bottom: 1px solid rgb(255 255 255 / 5%); */
+  /* background: linear-gradient(rgb(0 0 0 / 90%), rgb(5 2 20 / 85%)); */
+  background: rgba(0, 0, 0, 0);
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 使left和right元素分布在两端 */
+  /* display: grid;
+   grid-template-columns: 1fr 0.5fr 1fr; */
+  height: 100%;
+  font-family: Maple Mono SC NF, JetBrainsMono Nerd Font, monospace;
+  font-weight: bold;
+  /* padding: 5px 8px; */
+  /* padding-bottom: 12px;
+   padding-top: 5px; */
+  padding-left: 10px;
+  padding-right: 1px;
+  background: #2b2b2b;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* .left,
+ .center,
+ .right {
+   display: flex;
+   align-items: center;
+ } */
+
+.left {
+  display: flex;
+  align-items: center;
+  text-align: center; /* 文本居中，如果需要的话 */
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  position: absolute; /* 绝对定位 */
+  left: 50%; /* 水平居中 */
+  transform: translateX(-50%); /* 调整位置 */
+  text-align: center; /* 文本居中，如果需要的话 */
+  max-width: 400px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  flex-shrink: 0; /* 防止right元素缩小 */
+}
+
+.logo,
+.binding-mode,
+.network,
+.tiling-direction {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.ssid {
+  display: flex;
+  align-items: center;
+}
+
+.battery {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  margin-right: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 5px;
+  /* padding-top: 2px;
+   padding-bottom: 2px; */
+  background-color: #68ae0c;
+  border-radius: 5px;
+  border-color: rgb(146, 214, 55);
+  color: #000000;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  margin-right: 7px;
+  color: #f8e1b7;
+  /* padding-top: 2px;
+   padding-bottom: 2px; */
+  padding-right: 5px;
+  padding-left: 5px;
+  background: rgb(143, 31, 79);
+  border-radius: 5px;
+  border-color: rgb(220, 72, 136);
+}
+.memory {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  margin-right: 7px;
+  /* padding-top: 2px;
+     padding-bottom: 2px; */
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 5px;
+  background-color: #cba6f7;
+  color: #55406e;
+  border-radius: 5px;
+  border-color: #e0cbf8;
+  min-width: 50px;
+}
+.cpu {
+  /* display: flex;
+   align-items: center; */
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  margin-right: 7px;
+  /* padding-top: 2px;
+   padding-bottom: 2px; */
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 5px;
+  color: rgb(240, 227, 188);
+  background: rgb(76, 123, 153);
+  border-radius: 5px;
+  border-color: rgb(122, 176, 209);
+  min-width: 65px;
+}
+
+.title {
+  color: rgb(240, 227, 188);
+  font-family: Maple Mono SC NF, 国家宝藏楷书加粗, monospace;
+  font-weight: normal;
+  /* max-width: 400px; */
+  align-items: center;
+  text-align: center;
+  white-space: nowrap; /* 确保文本不换行 */
+  overflow: hidden; /* 超出部分隐藏 */
+  text-overflow: ellipsis; /* 显示省略号 */
+}
+
+.clash-open {
+  margin-right: 5px;
+  background: #6f4d22;
+  color: rgb(55, 42, 2);
+  border-radius: 5px;
+  background: #c5c2bb;
+  border-color: #e0dcd3;
+  cursor: pointer;
+}
+
+.quick-setting {
+  margin-right: 5px;
+  color: rgb(55, 42, 2);
+  background-color: #e19278;
+  border-radius: 5px;
+  background: #c5bbc2;
+  border-color: #d8ced5;
+  cursor: pointer;
+}
+
+.notify-panel {
+  margin-right: 5px;
+  color: rgb(55, 42, 2);
+  background: #bbc5c5;
+  border-color: #c7d1d1;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.speedmode {
+  /* min-width: 180px; */
+}
+
+.downspeed,
+.upspeed {
+  align-items: center;
+  text-align: center;
+}
+.downspeed {
+  margin-right: 3px;
+}
+
+.netspeed {
+  display: flex;
+  align-items: center;
+
+  font-weight: bold;
+  margin-right: 5px;
+  color: #000000;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 5px;
+  background: #bec5bb;
+  border-color: #d8dfd5;
+  cursor: pointer;
+}
+
+.workspaces {
+  margin-bottom: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.workspace {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  background: #dad6ce;
+  color: #6c3c99;
+  border-radius: 5px;
+  border-color: #eae7e0;
+  cursor: pointer;
+  margin-right: 8px;
+
+  &.displayed {
+    background: rgba(231, 117, 117, 0.968);
+  }
+
+  /* --border-transition: 0.2s ease;
+   transition: padding-right 0.2s ease, padding-left 0.2s ease, height 0.2s ease, background 0.2s ease, border-color var(--border-transition); */
+
+  &.focused {
+    padding-right: 12px;
+    padding-left: 12px;
+    font-weight: bold;
+    background: #a284bf;
+    border-color: #bfa3dc;
+    color: white;
+  }
+
+  &:hover {
+    background: #bf84a9;
+    border-color: #dea2c8;
+    color: white;
+  }
+}
+
+.binding-mode,
+.tiling-direction {
+  background: #6f4d22;
+  color: rgb(55, 42, 2);
+  border-radius: 5px;
+  background: #c5c2bb;
+  border-color: #e0dcd3;
+  cursor: pointer;
+}
+
+.binding-mode {
+  margin-right: 4px;
+}
+
+.cpu .high-usage {
+  color: #da1950;
+}
+
+.battery .charging-icon {
+  position: absolute;
+  left: 7px;
+  top: 2px;
+}
