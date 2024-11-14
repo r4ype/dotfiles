@@ -1,10 +1,3 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
-
--- local discipline = require("util.discipline")
--- discipline.cowboy()
---
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
@@ -24,3 +17,9 @@ keymap.set("n", "<Leader>O", "O<Esc>^Da", opts)
 keymap.set("n", "te", ":tabedit")
 keymap.set("n", "<tab>", ":tabnext<Return>", opts)
 keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
+
+-- util
+keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- move line up(v)
+keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- move line down(v)
+
+keymap.set("n", "<leader>f", vim.lsp.buf.format)
