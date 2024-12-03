@@ -17,9 +17,14 @@ keymap.set("n", "<Leader>O", "O<Esc>^Da", opts)
 keymap.set("n", "te", ":tabedit")
 keymap.set("n", "<tab>", ":tabnext<Return>", opts)
 keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
+vim.keymap.set("n", "<leader>sv", "<C-w>v")
 
 -- util
 keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- move line up(v)
 keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- move line down(v)
 
 keymap.set("n", "<leader>f", vim.lsp.buf.format)
+
+-- uncategorized
+vim.keymap.set("n", "<leader>q", "<C-w>q")
+vim.keymap.set("n", "<leader>a", "ggVG")
