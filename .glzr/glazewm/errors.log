@@ -1,0 +1,5 @@
+[2m2024-11-01T19:43:54.710179Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'chrome'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-11-01T19:45:40.083542Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'chrome'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-11-01T19:48:23.772126Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'chrome'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-11-01T19:48:25.279981Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'chrome'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-11-06T16:24:42.456913Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.

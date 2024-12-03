@@ -1,2 +1,3 @@
+start $HOME/.glzr/scripts/disableLwinToOpenMenu.ahk
+start $HOME/.glzr/scripts/autohidecursor.ahk
 start zebar
-start "C:\Users\parsa\.glzr\scripts\disableLwinToOpenMenu.ahk"
