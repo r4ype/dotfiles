@@ -5,9 +5,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        pyright = {},
         clangd = {},
-        rust_analyzer = {},
         tsserver = {},
         lua_ls = {
           settings = {
@@ -26,36 +24,20 @@ return {
     },
   },
 
-  -- Rust-specific tools
-  {
-    "simrat39/rust-tools.nvim",
-    dependencies = { "neovim/nvim-lspconfig" },
-    config = function()
-      require("rust-tools").setup({
-        server = {
-          on_attach = function(_, bufnr)
-            local opts = { noremap = true, silent = true, buffer = bufnr }
-            vim.keymap.set("n", "<leader>ca", require("rust-tools").hover_actions.hover_actions, opts)
-            vim.keymap.set("n", "<leader>cc", require("rust-tools").code_action_group.code_action_group, opts)
-          end,
-        },
-      })
-    end,
-  },
-
   -- Treesitter for syntax highlighting
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
-        "python",
+        "regex",
+        "html",
         "c",
         "cpp",
         "rust",
         "javascript",
         "typescript",
         "lua",
-        "html",
+        "python",
         "css",
         "json",
         "yaml",
@@ -68,13 +50,14 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        "pyright",
-        "flake8",
         "clangd",
-        "rust-analyzer",
         "codelldb",
         "lua-language-server",
         "typescript-language-server",
+        "stylua",
+        "shellcheck",
+        "shfmt",
+        "flake8",
       },
     },
   },
@@ -82,6 +65,26 @@ return {
   -- Telescope with FZF for faster searching
   {
     "nvim-telescope/telescope.nvim",
+    keys = {
+      -- add a keymap to browse plugin files
+      -- stylua: ignore
+      {
+        "<leader>fa",
+        function()   require("telescope.builtin").find_files({ cwd = require("lazy.core.config").options.root })
+     end,
+        desc = "Find Plugin File",
+      },
+    },
+    -- change some options
+    opts = {
+      defaults = {
+        layout_strategy = "horizontal",
+        layout_config = { prompt_position = "top" },
+        sorting_strategy = "ascending",
+        winblend = 0,
+      },
+    },
+
     dependencies = {
       "nvim-telescope/telescope-fzf-native.nvim",
       build = "make",
@@ -89,13 +92,5 @@ return {
         require("telescope").load_extension("fzf")
       end,
     },
-  },
-
-  {
-    "iamcco/markdown-preview.nvim",
-    ft = "markdown",
-    build = function()
-      vim.fn["mkdp#util#install"]()
-    end,
   },
 }

@@ -262,8 +262,8 @@ keybindings:
   # Launch CMD terminal. Alternatively, use `shell-exec wt` or
   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
   # Terminal and Git Bash respectively.
-  - commands: ["shell-exec wt nu"]
-    bindings: ["Lwin+enter"]
+  - commands: ["shell-exec wt"]
+    bindings: ["Alt+enter"]
 
   # Focus the next/previous workspace defined in `workspaces` config.
   - commands: ["focus --next-active-workspace"]
@@ -326,25 +326,7 @@ keybindings:
   - commands: ["move --workspace 9", "focus --workspace 9"]
     bindings: ["alt+shift+9"]
 
-  - commands: ["shell-exec wt"]
-    bindings: ["Alt+Enter"]
   - commands: ["shell-exec wt yazi"]
-    bindings: ["Ctrl+LWin+e"]
+    bindings: ["Alt+e"]
   - commands: ["shell-exec firefox"]
-    bindings: ["LWin+f"]
-
-  - commands: ["focus --next-workspace"]
-    bindings: ["Lwin+l"]
-  - commands: ["focus --prev-workspace"]
-    bindings: ["Lwin+j"]
-
-  - commands: ["move --next-workspace", "focus --next-workspace"]
-    bindings: ["Ctrl+Lwin+Right"]
-  - commands: ["move --prev-workspace", "focus --prev-workspace"]
-    bindings: ["Ctrl+Lwin+Left"]
-
-  - commands:
-      [
-        "shell-exec %HOMEPATH%/.glzr/scripts/shellexec.exe powershell ~/script/keyviz-toggle.ps1",
-      ]
-    bindings: ["Lwin+k"]
+    bindings: ["Alt+f"]

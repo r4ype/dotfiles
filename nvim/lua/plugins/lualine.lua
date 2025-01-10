@@ -1,5 +1,5 @@
 return {
-  -- or you can return new options to override all the defaults
+
   {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
@@ -12,50 +12,19 @@ return {
 
       vim.o.laststatus = vim.g.lualine_laststatus
 
-      -- --tokyonight
       local colors = {
-        bg = "#222436",
-        fg = "#c0caf5",
-        yellow = "#ECBE7B",
-        cyan = "#7dcfff",
-        darkblue = "#4266b3",
-        green = "#9ece6a",
-        orange = "#ff9e64",
-        violet = "#bb9af7",
-        magenta = "#bb9af7",
-        blue = "#7aa2f7",
-        red = "#f7768e",
+        bg = "#181825",
+        fg = "#cdd6f4",
+        yellow = "#f9e2af",
+        cyan = "#89dceb",
+        darkblue = "#1e66f5",
+        green = "#a6e3a1",
+        orange = "#fab387",
+        violet = "#cba6f7",
+        magenta = "#cba6f7",
+        blue = "#89b4fa",
+        red = "#f38ba8",
       }
-
-      --gruvbox dark
-      -- local colors = {
-      --   bg = "#282828",
-      --   fg = "#ebdbb2",
-      --   yellow = "#fabd2f",
-      --   cyan = "#83a598",
-      --   darkblue = "#458588",
-      --   green = "#b8bb26",
-      --   orange = "#fe8019",
-      --   violet = "#b16286",
-      --   magenta = "#d3869b",
-      --   blue = "#83a598",
-      --   red = "#fb4934",
-      -- }
-
-      --gruvbox light
-      -- local colors = {
-      --   bg = "#fbf1c7",
-      --   fg = "#3c3836",
-      --   yellow = "#fabd2f",
-      --   cyan = "#83a598",
-      --   darkblue = "#458588",
-      --   green = "#b8bb26",
-      --   orange = "#fe8019",
-      --   violet = "#b16286",
-      --   magenta = "#d3869b",
-      --   blue = "#83a598",
-      --   red = "#fb4934",
-      -- }
 
       local conditions = {
         buffer_not_empty = function()
@@ -97,7 +66,7 @@ return {
               function()
                 return ""
               end,
-              color = { fg = colors.darkblue }, -- Sets highlighting of component
+              color = { fg = colors.blue }, -- Sets highlighting of component
               padding = { left = 0, right = 1 }, -- We don't need space before this
             },
             {
